@@ -1,3 +1,8 @@
 /config.local
 /tmp
 /cache
+firebase-key.json
+__pycache__/
+*.pyc
+data/news.json
+

@@ -1,0 +1,11 @@
+stages:
+
+  fetch:
+    cmd: python src/fetch_news.py
+    outs:
+      - data/news.json
+
+  upload:
+    cmd: python src/upload_firebase.py
+    deps:
+      - data/news.json

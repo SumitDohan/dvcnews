@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  fetch:
+    cmd: python src/fetch_news.py
+    outs:
+    - path: data/news.json
+      hash: md5
+      md5: 62d7fe650ad65f9b945668b827a13b27
+      size: 22518
+  upload:
+    cmd: python src/upload_firebase.py
+    deps:
+    - path: data/news.json
+      hash: md5
+      md5: 62d7fe650ad65f9b945668b827a13b27
+      size: 22518
