@@ -1,0 +1,12 @@
+# Firebase credentials
+firebase-key.json
+
+# DVC outputs
+data/news.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
