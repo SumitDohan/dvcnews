@@ -4,6 +4,7 @@ stages:
     cmd: python src/fetch_news.py
     outs:
       - data/news.json
+    always_changed: true
 
   upload:
     cmd: python src/upload_firebase.py

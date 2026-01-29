@@ -5,12 +5,12 @@ stages:
     outs:
     - path: data/news.json
       hash: md5
-      md5: 8874f911e857eab40fe7c48a08887999
-      size: 23457
+      md5: 859fcf67dd90fb8b9d21217af41d1d11
+      size: 23721
   upload:
     cmd: python src/upload_firebase.py
     deps:
     - path: data/news.json
       hash: md5
-      md5: 8874f911e857eab40fe7c48a08887999
-      size: 23457
+      md5: 859fcf67dd90fb8b9d21217af41d1d11
+      size: 23721
