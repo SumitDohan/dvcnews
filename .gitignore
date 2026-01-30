@@ -2,7 +2,7 @@
 firebase-key.json
 
 # DVC outputs
-#data/news.json
+data/news.json
 
 # Python cache
 __pycache__/
